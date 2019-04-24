@@ -1,6 +1,6 @@
 # Retail Store Sales Forecast
 
-Analysing previous sales of a market and forecasting future sales.
+Analysing previous sales by provided data and forecasting future sales.
 
 #### Tasks: 
 
