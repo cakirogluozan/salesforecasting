@@ -2,7 +2,9 @@
 
 Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments.
 
-Tasks: Predict future sales of department-wide for each store.
+#### Tasks: 
+
+Predict future sales of department-wide for each store.
 
 Proving the importance of holiday information where there is no time information.
 
