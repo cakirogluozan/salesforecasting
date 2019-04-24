@@ -1,6 +1,6 @@
 # Retail Store Sales Forecast
 
-Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments.
+Analysing previous sales of a market and forecasting future sales.
 
 #### Tasks: 
 
@@ -9,6 +9,8 @@ Predict future sales of department-wide for each store.
 Proving the importance of holiday information where there is no time information.
 
 ## Dataset
+
+Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments.
 
 Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
 
