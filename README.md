@@ -39,6 +39,14 @@ Dataset is prepared by
 - visualizing correlation matrix for feature anaylsis
 - splitting training material (which we have groundtruth value) into two parts for inspecting over/under fitting. (training data, validation data)
 
+![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/type_nans.png?raw=true)
+
+
+![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/data_df.png?raw=true)
+
+![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/corr_matrix.png?raw=true)
+
+
 ## Model Proposing
 
 For this objective, an ensemble learning method, Random Forest Regressor is proposed with 100 trees for estimation.
@@ -49,8 +57,10 @@ Model is fitted with training data with sample weight where if holiday the sampl
 
 Mean Squared Error is evaluated for this training. And the results of training-to-training and test-to-training performances are plotted.
 
-Graphs: 
-![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/graphs.png "Graphs")
+![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/training.png?raw=true)
+
+![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/validation.png?raw=true)
+
 
 Metrics | training error | test error  |
 |:---:|:-------------:| -----:|
@@ -60,17 +70,17 @@ Metrics | training error | test error  |
 
 2 identical models are fitted with two training data whose difference is only markdown columns absence or presence.
 
-## Performance Evaluation
-
 As a result, while it is not a big difference in training error, it has a %40 improvement when holiday information columns are used.
 
  
-![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/error_matrix.png?raw=true "Error matrix")
+![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/error_matrix.png?raw=true)
 
 
 ## Finalizing the Model
 
 Finally, the model is trained with the whole training material (recall we used half of it for training and the other half for evaluation).
+
+![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/final.png?raw=true)
 
 ## Preparing for test
 
@@ -78,6 +88,6 @@ Test data is prepared for forecasting future sales.
 
 ## Future Sales Forecasting
 
-![x](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/future_preds.png?raw=true "Error matrix")
+![x](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/in%20future.png?raw=true)
 
 
