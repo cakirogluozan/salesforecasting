@@ -14,21 +14,21 @@ Dataset consists of historical sales data for 45 stores located in different reg
 
 Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
 
-*stores.csv*
+1- *stores.csv*
 
 This file contains anonymized information about the 45 stores, indicating the type and size of
 store.
 
-*features.csv*
+2- *features.csv*
 
 This file contains additional data related to the store, department, and regional activity for the
 given dates. 
 
-*train.csv*
+3- *train.csv*
 
 This is the historical training data, which covers to 2010-02-05 to 2012-01-01.
 
-*test.csv*
+4- *test.csv*
 
 This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
 
@@ -43,10 +43,20 @@ Dataset is prepared by
 - visualizing correlation matrix for feature anaylsis
 - splitting training material (which we have groundtruth value) into two parts for inspecting over/under fitting. (training data, validation data)
 
+The row data types and the number of NaN values (nulls) are shown in below.
+
+
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/type_nans.png?raw=true)
 
 
+Processed dataframe which is used for training is shown in the following.
+
+
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/data_df.png?raw=true)
+
+
+Lastly, correlation matrix of features are visualized in order to get an intuition about the dataset.
+
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/corr_matrix.png?raw=true)
 
@@ -65,6 +75,7 @@ Mean Squared Error is evaluated for this training. And the results of training-t
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/validation.png?raw=true)
 
+In below, the performance of model over the dataset which has 16k mean and 23k standard deviation and over 294k sales.
 
 Metrics | training  | test   | 
 |:---:|:-------------:| -----:|
@@ -87,11 +98,9 @@ Finally, the model is trained with the whole training material (recall we used h
 
 ![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/final.png?raw=true)
 
-## Preparing for test
-
 Test data is prepared for forecasting future sales.
 
-## Future Sales Forecasting
+#### Future Sales Forecasting
 
 In below, future sales of the store 1 and department 1 is plotted. The graph shows future predictions of aforementioned department's sales over date.
 
