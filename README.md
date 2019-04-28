@@ -4,9 +4,9 @@ Analysing previous sales by provided data and forecasting future sales.
 
 #### Tasks: 
 
-Predict future sales of department-wide for each store.
+1- Predict future sales of department-wide for each store.
 
-Proving the importance of holiday information where there is no time information.
+2- Proving the importance of holiday information where there is no time information.
 
 ## Dataset
 
@@ -43,20 +43,18 @@ Dataset is prepared by
 - visualizing correlation matrix for feature anaylsis
 - splitting training material (which we have groundtruth value) into two parts for inspecting over/under fitting. (training data, validation data)
 
-The row data types and the number of NaN values (nulls) are shown in below.
 
+The row data types and the number of NaN values (nulls) are shown in below.
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/type_nans.png?raw=true)
 
 
 Processed dataframe which is used for training is shown in the following.
 
-
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/data_df.png?raw=true)
 
 
 Lastly, correlation matrix of features are visualized in order to get an intuition about the dataset.
-
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/corr_matrix.png?raw=true)
 
@@ -86,7 +84,7 @@ Metrics | training  | test   |
 
 2 identical models are fitted with two training data whose difference is only markdown columns absence or presence.
 
-As a result, while it is not a big difference in training error, it has a %40 improvement when holiday information columns are used.
+As a result, while it is not a big difference in training error, it has a 40% improvement when holiday information columns are used.
 
  
 ![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/error_matrix.png?raw=true)
