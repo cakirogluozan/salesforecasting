@@ -66,9 +66,10 @@ Mean Squared Error is evaluated for this training. And the results of training-t
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/validation.png?raw=true)
 
 
-Metrics | training error | test error  |
+Metrics | training  | test   | 
 |:---:|:-------------:| -----:|
-|MSE| 1623 | 5851 |
+|MSE| 1623 | 5851 | 
+| r-squared value| 0.99 | 0.93 |
 
 ## Task 2: Comparison of Importance of Markdowns where there is no time information
 
