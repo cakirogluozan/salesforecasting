@@ -92,6 +92,8 @@ Test data is prepared for forecasting future sales.
 
 ## Future Sales Forecasting
 
+In below, future sales of the store 1 and department 1 is plotted. The graph shows future predictions of aforementioned department's sales over date.
+
 ![x](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/in%20future.png?raw=true)
 
 
