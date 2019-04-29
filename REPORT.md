@@ -1,6 +1,24 @@
 # Retail Store Sales Forecast
 
-Analysing previous sales by provided data and forecasting future sales.
+### Data
+Data includes following columns:
+
+    - Date        : Weekly separated dates.
+    - Store       : Number of store.
+    - Department  : Number of department for the store.
+    - Temperature : Temparature (F) at given date.
+    - IsHoliday   : Holiday flag of the date.
+    - Fuel Price  : Fuel price at given date.
+    - CPI         : Consumer Price Index at current date.
+    - Unemployment: Unemployment at given date
+    - Type        : Type of the store (A, B or C)
+    - Size        : Size of the store
+    - Weekly Sales: Sales ($) at given date.
+
+### Objectives
+1- Forecasting future sales of Retail Stores for each store-department.
+
+2- Proving the importance of four biggest holiday markdowns on results.
 
 #### Tasks: 
 
@@ -8,11 +26,9 @@ Analysing previous sales by provided data and forecasting future sales.
 
 2- Proving the importance of holiday information where there is no time information.
 
-## Dataset
+### Dataset
 
-Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments.
-
-Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
+Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments. Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
 
 1- *stores.csv*
 
