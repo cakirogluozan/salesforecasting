@@ -1,0 +1,8 @@
+scikit-learn
+os
+subprocessing
+numpy
+matplotlib
+seaborn
+ipython
+pandas
