@@ -1,4 +1,4 @@
-# Retail Store Sales Forecast
+## Report
 
 ### Data
 Data includes following columns:
