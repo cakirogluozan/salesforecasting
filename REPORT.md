@@ -33,6 +33,7 @@ Dataset consists of historical sales data for 45 stores located in different reg
 ![](imgs/train_csv.png)
 
     4- *test.csv*     : This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
+![](imgs/test_csv.png)
 
 ### Data Handling
 Dataset is prepared by
