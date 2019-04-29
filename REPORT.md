@@ -37,19 +37,13 @@ Dataset consists of historical sales data for 45 stores located in different reg
 ## Data Handling
 
 Dataset is prepared by
-- merging features and stores information into training and test materials. 
-
-- encoding string types and changing boolean type into integer type.
-- adding time information by extracting week of the year value 
-- analysing if there is any NaN value
-- extracting 4 biggest holiday information and adding them into training dataframe.
+- merging features & stores with train and test dataframes. 
+- encoding string types of 'Date' and 'Type' features and changing 'IsHoliday' feature from boolean type into integer type.
+- adding time information by extracting week of the year value from 'Date' column.
+- analysing if there is any NaN value in training and test dataframes.
+- extracting 4 biggest holiday information and adding them into training and test dataframe.
 - visualizing correlation matrix for feature anaylsis
 - splitting training material (which we have groundtruth value) into two parts for inspecting over/under fitting. (training data, validation data)
-
-
-The row data types and the number of NaN values (nulls) are shown in below.
-
-![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/type_nans.png?raw=true)
 
 
 Processed dataframe which is used for training is shown in the following.
@@ -57,13 +51,12 @@ Processed dataframe which is used for training is shown in the following.
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/data_df.png?raw=true)
 
 
-Lastly, correlation matrix of features are visualized in order to get an intuition about the dataset.
+Correlation matrix of features are visualized in order to get an intuition about the dataset.
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/corr_matrix.png?raw=true)
 
 
 ## Model Proposing
-
 For this objective, an ensemble learning method, Random Forest Regressor is proposed with 100 trees for estimation.
 
 Model is fitted with training data with sample weight where if holiday the sample weight is 5 else 1. It is noted that weighting is not neccessary for RF method.
@@ -72,9 +65,9 @@ Model is fitted with training data with sample weight where if holiday the sampl
 
 Mean Squared Error is evaluated for this training. And the results of training-to-training and test-to-training performances are plotted.
 
-![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/training.png?raw=true)
+![alt text](imgs/training.png)
 
-![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/validation.png?raw=true)
+![alt text](imgs/validation.png)
 
 In below, the performance of model over the dataset which has 16k mean and 23k standard deviation and over 294k sales.
 
