@@ -36,7 +36,7 @@ Dataset consists of historical sales data for 45 stores located in different reg
 
 ### Data Handling
 Dataset is prepared by
-- merging features & stores with train and test dataframes. 
+- merging features & stores dataframes with train and test dataframes. 
 - encoding string types of 'Date' and 'Type' features and changing 'IsHoliday' feature from boolean type into integer type.
 - adding time information by extracting week of the year value from 'Date' column.
 - analysing if there is any NaN value in training and test dataframes.
