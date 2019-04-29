@@ -15,7 +15,7 @@ The libraries can be downloaded by the following line.
     pip install -r requirements.txt
 
 ### Model
-For this project I implemented an ensemble learning method: Random Forest Regression with 100 estimators (100 trees). Random Forest is modelled by fitting the data into n different estimators (trees) and the estimators vote for an answer. Highest voted answer is chosen as an answer.
+For this project I implemented an ensemble learning method: Random Forest Regression with 100 estimators (100 trees). Random Forest is modelled by fitting the data into n different estimators (trees). It simply performes as described in the following: The estimators vote for an answer. Highest voted answer is chosen as an answer.
 
 ### Results
 #### Prediction of training data
