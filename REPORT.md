@@ -20,38 +20,25 @@ Data includes following columns:
 
 2- Proving the importance of four biggest holiday markdowns on results.
 
-#### Tasks: 
-
-1- Predict future sales of department-wide for each store.
-
-2- Proving the importance of holiday information where there is no time information.
-
 ### Dataset
-
 Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments. Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
 
-1- *stores.csv*
+    1- *stores.csv*   : This file contains anonymized information about the 45 stores, indicating the type and size of store.
+![](imgs/stores_csv.png)
 
-This file contains anonymized information about the 45 stores, indicating the type and size of
-store.
+    2- *features.csv* : This file contains additional data related to the store, department, and regional activity for the given dates. 
+![](imgs/features_csv.png)
 
-2- *features.csv*
+    3- *train.csv*    : This is the historical training data, which covers to 2010-02-05 to 2012-01-01.
+![](imgs/train_csv.png)
 
-This file contains additional data related to the store, department, and regional activity for the
-given dates. 
-
-3- *train.csv*
-
-This is the historical training data, which covers to 2010-02-05 to 2012-01-01.
-
-4- *test.csv*
-
-This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
+    4- *test.csv*     : This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
 
 ## Data Handling
 
-Dataset is prepared by 
+Dataset is prepared by
 - merging features and stores information into training and test materials. 
+
 - encoding string types and changing boolean type into integer type.
 - adding time information by extracting week of the year value 
 - analysing if there is any NaN value
