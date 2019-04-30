@@ -88,6 +88,6 @@ In below, future sales of the store 1 and department 1 is plotted. The graph sho
 ### Task 2: Comparison of Importance of Markdowns where there is no time information
 2 identical models are fitted with two training data whose difference is only markdown columns absence or presence.
 
-As a result, while it is not a big difference in training error, it has a 40% improvement when holiday information columns are used.
+As a result, while it is not a big difference in training error, it has a 48% improvement when holiday information columns are used.
  
 ![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/error_matrix.png?raw=true)
