@@ -17,7 +17,7 @@ The libraries can be downloaded by the following line.
 ### Model
 For this project I implemented an ensemble learning method: Random Forest Regression with 100 estimators (100 trees). Random Forest is modelled by fitting the data into n different estimators (trees). It simply performes as described in the following: The estimators vote for an answer. Highest voted answer is chosen as an answer.
 
-### Results
+### Predictions
 #### Prediction of training data
 In the figure below, the prediction of training data and groundtruth is plotted (only for the 1st store's 1st department). Training Mean Squared Error (MSE) is noted as 1632 and r squared value is 0.99.
 
@@ -33,3 +33,17 @@ Validation data: the data which the model has not seen before, splitted before f
 #### Prediction of test data
 Lastly, the future sales of the 1st store's 1st department, which is forecasted by the Random Forest model, is plotted. 
 ![](imgs/in_future.png)
+
+### Comparison of Errors
+Second part of the project requires proving the importance of holiday markdowns where the model is trained without date information.
+
+Holiday markdowns: Four columns where each column is a flag of a holiday: (Labor Day, Christmas, Easter, Thanksgiving).
+
+In below, the comparison of two different model is shown. 
+        
+    model_with row is the Random Forest model where it is fitted with holiday markdowns (columns). 
+    model_without row is the same Random Forest model in below, the only difference is it is fitted without holiday markdowns (columns).
+    training column is the MSE error of prediction of training data.
+    validation column is the MSE error of performance of the models on validation data.
+        
+![](imgs/error_matrix.png)
