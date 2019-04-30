@@ -23,16 +23,16 @@ Data includes following columns:
 ### Dataset
 Dataset consists of historical sales data for 45 stores located in different regions. Each store contains a number of departments. Dataset contains train.csv, test.csv, features.csv, stores.csv files. 
 
-    *stores.csv*: This file contains anonymized information about the 45 stores, indicating the type and size of store.
+    stores.csv: This file contains anonymized information about the 45 stores, indicating the type and size of store.
 ![](imgs/stores_csv.png)
 
-    *features.csv*: This file contains additional data related to the store, department, and regional activity for the given dates. 
+    features.csv: This file contains additional data related to the store, department, and regional activity for the given dates. 
 ![](imgs/features_csv.png)
 
-    *train.csv*: This is the historical training data, which covers to 2010-02-05 to 2012-01-01.
+    train.csv: This is the historical training data, which covers to 2010-02-05 to 2012-01-01.
 ![](imgs/train_csv.png)
 
-    *test.csv*: This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
+    test.csv: This file is identical to train.csv, except we have withheld the weekly sales. You must predict the sales for each triplet of store, department, and date in this file.
 ![](imgs/test_csv.png)
 
 ### Data Handling
