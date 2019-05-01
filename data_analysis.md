@@ -8,4 +8,8 @@ In the stores.csv file, there are several information columns for each store in 
 
 Every store has its type (A-B-C) and its size. In the following pie-chart, number of different types of stores are visualized.
 
-![](DA_imgs/stores_pie.png=20x20)
+![](DA_imgs/stores_pie.png)
+
+As it can be seen, there are 22 A-type stores, 17 B-type stores and 6 C-type stores. In the figure, bar-chart of the stores are visualized.
+
+![](DA_imgs/stores_bar.png)
