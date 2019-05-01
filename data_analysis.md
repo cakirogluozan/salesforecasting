@@ -8,4 +8,4 @@ In the stores.csv file, there are several information columns for each store in 
 
 Every store has its type (A-B-C) and its size. In the following pie-chart, number of different types of stores are visualized.
 
-![](DA_imgs/stores_pie.png)
+![](DA_imgs/stores_pie.png=20x20)
