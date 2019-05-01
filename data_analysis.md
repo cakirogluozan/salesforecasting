@@ -23,3 +23,11 @@ As it can be seen, there are 22 A-type stores, 17 B-type stores and 6 C-type sto
     else:
         print('error value')
         return False
+      
+  After examining size distribution, the stats of stores and correlation of size with type will be discussed. In the following table, number of type stores, mean size, median size and standard deviation size of corresponding type. 
+  ![](DA_imgs/stores_stats.png)
+ 
+In the following bar-chart, y axis represents size of stores and x axis represents store id. Moreover, type of each store is marked with different colors (see pie-chart).
+  ![](DA_imgs/stores_bar.png)
+  
+It can be concluded that while A type of stores are generally big sized stores, B type of stores are medium and C type of stores are small sized stores. 
