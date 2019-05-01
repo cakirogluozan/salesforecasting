@@ -1,5 +1,5 @@
 ### Data Analysis
-In this file, 
+In this file, the given data will be anaylized before fitting.
 
 #### Stores Analysis
 In the stores.csv file, there are several information columns for each store in Retail Stores. stores.csv dataframe can be shown as below.
