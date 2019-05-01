@@ -31,3 +31,40 @@ In the following bar-chart, y axis represents size of stores and x axis represen
   ![](DA_imgs/stores_bar.png)
   
 It can be concluded that while A type of stores are generally big sized stores, B type of stores are medium and C type of stores are small sized stores. 
+
+### Training Dataframe Analysis
+In the following tables, merged dataframe and its statistics will be visualized.
+![](DA_imgs/final_df.png)
+
+For better resolution, please click on the table and examine the table in following tab.
+![](DA_imgs/final_df_stats.png)
+
+While there may be some information to extract, for better representation, correlation matrix will be visualized.
+![](DA_imgs/corr_matrix.png)
+
+and its thresholded version. For feature selection, I've used 0.25 value for thresholding the correlation. In other words, if two features are correlated more than abs(0.25), then they are correlated.
+![](DA_imgs/th_corr_matrix.png)
+
+The (negative) correlation can be seen in between CPI-Unemployment and (encoded)Type-Size. For better illustration, their average changes over date will be plotted. 
+
+Average changes: the dataframe is groupby date and each group is averaged. In other words, below each feature, there is average value on given date. Main idea is to generalize the dataframe. New averaged dataframe looks like in below.
+![](DA_imgs/average_df.png)
+
+After explaining average dataframe, average dataframe's CPI changes and Unemployment changes over time is plotted, in the next two figures.
+
+![](DA_imgs/average_CPIvsunemp.png)
+![](DA_imgs/average_sizevstype.png)
+
+In the plots, it is more obvious that each two features are negatively proportional to each other. It means that, using both of the features does not make huge difference at results than using only one of them. On the other hand, using more features will require more time to process during fitting. Thus, only one of each plots can be used for fitting.
+
+In the next figures, the Weekly Sales changes and each feature's changes over date will be plotted and examined. 
+
+![](DA_imgs/average_temp.png)
+![](DA_imgs/average_CPI.png)
+![](DA_imgs/average_fuel.png)
+![](DA_imgs/average_unemp.png)
+![](DA_imgs/average_christ.png)
+![](DA_imgs/average_thanks.png)
+![](DA_imgs/average_labor.png)
+![](DA_imgs/average_super.png)
+
