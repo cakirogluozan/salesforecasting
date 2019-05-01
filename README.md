@@ -3,7 +3,7 @@ This project is a solution for Retail Store Sales Forecasting which is implement
 
 In the repository, you can find 
 - the [Python3 code](retail_store_sales_forecast.ipynb) 
-- a detailed [report](REPORT.md) of the project 
+- a detailed [data analysis](Data%20Analysis.md) and [report](REPORT.md) of the project 
 - the [data](data/) which is used for the project.
 
 ### Requirements:
