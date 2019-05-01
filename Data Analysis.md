@@ -2,6 +2,7 @@
 In this file, the given data will be anaylized before fitting. 
 
 1- Stores Analysis
+
 2- Training Dataframe Analysis
 
 #### Stores Analysis
