@@ -87,4 +87,6 @@ It is hard to give a comment for the first four graph. Hence feature_importance 
 
 On the other hand, it can be easily said that during Thanksgiving Day and right before Christmas there are peaks at sales and high sales in between these days. Also, after Christmas there is dip and it lasts until Super Bowl. About Labor Day, there is a slight decrease at sales after the day.
 
-To conclude, the last four features will surely help the model during fitting. The first four features should be analyzed  by feature importance method after initial fitting.
+To conclude, the last four features will surely help the model during fitting. The first four features should be analyzed  by feature importance method after initial fitting. 
+
+Moreover, as aforementioned, due to the correlation values in between CPI-Unemployment and Type-Size, fitting can be performed only by including one feature of each pair.
