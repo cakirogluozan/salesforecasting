@@ -1,4 +1,4 @@
-## Report
+# Report
 
 ### Data
 Data includes following columns:
@@ -36,22 +36,22 @@ Dataset consists of historical sales data for 45 stores located in different reg
 ![](imgs/test_csv.png)
 
 ### Data Handling
-Dataset is prepared by
+Extended process of data is written in [data analysis](Data%20Analysis.md) file. 
+
+Basically, dataset is prepared by
 - merging features & stores dataframes with train and test dataframes. 
 - encoding string types of 'Date' and 'Type' features and changing 'IsHoliday' feature from boolean type into integer type.
 - adding time information by extracting week of the year value from 'Date' column.
 - analysing if there is any NaN value in training and test dataframes.
 - extracting 4 biggest holiday information and adding them into training and test dataframe.
 - visualizing correlation matrix for feature anaylsis
+- eliminating two columns ('Type' and 'CPI' columns) after observing their correlation with 'Size' and 'Unemployment' columns.
 - splitting training material (which we have groundtruth value) into two parts for inspecting over/under fitting. (training data, validation data)
 
 Processed dataframe which is used for training is shown in the following.
 
 ![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/data_df.png?raw=true)
 
-Correlation matrix of features are visualized in order to get an intuition about the dataset.
-
-![alt text](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/corr_matrix.png?raw=true)
 
 ### Model Proposing
 For this objective, an ensemble learning method, Random Forest Regressor is proposed with 100 trees for estimation.
@@ -69,7 +69,7 @@ In below, the performance of model over the dataset which has 16k mean and 23k s
 
 Metrics | training  | validation   | 
 |:---:|:-------------:| -----:|
-|MSE| 1623 | 5851 | 
+|MSE| 3.3e+6 | 3.4e+7| 
 | r-squared value| 0.99 | 0.93 |
 
 
@@ -90,4 +90,5 @@ In below, future sales of the store 1 and department 1 is plotted. The graph sho
 
 As a result, while it is not a big difference in training error, it has a 48% improvement when holiday information columns are used.
  
-![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/error_matrix.png?raw=true)
+![Error](imgs/error_matrix.png)
+![Error](imgs/r_matrix.png)
