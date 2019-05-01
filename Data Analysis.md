@@ -1,5 +1,8 @@
 ### Data Analysis
-In this file, the given data will be anaylized before fitting.
+In this file, the given data will be anaylized before fitting. 
+
+1- Stores Analysis
+2- Training Dataframe Analysis
 
 #### Stores Analysis
 In the stores.csv file, there are several information columns for each store in Retail Stores. stores.csv dataframe can be shown as below.
@@ -32,7 +35,7 @@ In the following bar-chart, y axis represents size of stores and x axis represen
   
 It can be concluded that while A type of stores are generally big sized stores, B type of stores are medium and C type of stores are small sized stores. 
 
-### Training Dataframe Analysis
+#### Training Dataframe Analysis
 In the following tables, merged dataframe and its statistics will be visualized.
 ![](DA_imgs/final_df.png)
 
