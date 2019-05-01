@@ -59,12 +59,32 @@ In the plots, it is more obvious that each two features are negatively proportio
 
 In the next figures, the Weekly Sales changes and each feature's changes over date will be plotted and examined. 
 
+1st graph: Weekly Sales and Temperature over Date
 ![](DA_imgs/average_temp.png)
+
+2nd graph: Weekly Sales and CPI over Date
 ![](DA_imgs/average_CPI.png)
+
+3rd graph: Weekly Sales and Fuel Price over Date
 ![](DA_imgs/average_fuel.png)
+
+4th graph: Weekly Sales and Unemployment over Date
 ![](DA_imgs/average_unemp.png)
+
+5th graph: Weekly Sales and Christmas over Date
 ![](DA_imgs/average_christ.png)
+
+6th graph: Weekly Sales and Thanksgiving Day over Date
 ![](DA_imgs/average_thanks.png)
+
+7th graph: Weekly Sales and Labor Day over Date
 ![](DA_imgs/average_labor.png)
+
+8th graph: Weekly Sales and Super Bowl over Date
 ![](DA_imgs/average_super.png)
 
+It is hard to give a comment for the first four graph. Hence feature_importance method of scikit-learn will be used for measuring their importance for fitting.
+
+On the other hand, it can be easily said that during Thanksgiving Day and right before Christmas there are peaks at sales and high sales in between these days. Also, after Christmas there is dip and it lasts until Super Bowl. About Labor Day, there is a slight decrease at sales after the day.
+
+To conclude, the last four features will surely help the model during fitting. The first four features should be analyzed  by feature importance method after initial fitting.
