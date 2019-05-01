@@ -78,6 +78,11 @@ Finally, the model is trained with the whole training material (recall we used h
 
 ![Error](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/final.png?raw=true)
 
+Metrics | training  |  
+|:---:|:-------------:| 
+|MSE| 2.3e+6 |
+| r-squared value| 0.99 | 
+
 Test data is prepared for forecasting future sales.
 
 ### Future Sales Forecasting
@@ -86,9 +91,11 @@ In below, future sales of the store 1 and department 1 is plotted. The graph sho
 ![x](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/in_future.png?raw=true)
 
 ### Task 2: Comparison of Importance of Markdowns where there is no time information
-2 identical models are fitted with two training data whose difference is only markdown columns absence or presence.
+Two identical models are fitted with two training data whose difference is only markdown columns absence or presence.
 
-As a result, while it is not a big difference in training error, it has a 48% improvement when holiday information columns are used.
+As a result, while it is not a big difference in training error and training r-squared value, there is a huge gap between validation metrics.
  
 ![Error](imgs/error_matrix.png)
 ![Error](imgs/r_matrix.png)
+
+It can be concluded that markdowns have huge impact on performance.
