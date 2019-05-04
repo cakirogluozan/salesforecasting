@@ -91,11 +91,19 @@ In below, future sales of the store 1 and department 1 is plotted. The graph sho
 ![x](https://github.com/cakirogluozan/salesforecasting/blob/master/imgs/in_future.png?raw=true)
 
 ### Task 2: Comparison of Importance of Markdowns where there is no time information
-Two identical models are fitted with two training data whose difference is only markdown columns absence or presence.
+Two identical models are fitted with two training data whose difference is only markdown columns absence or presence. 
+
+    model_with   : model which is fitted with markdown columns
+    model_without: model which is fitted without markdown columns
 
 As a result, while it is not a big difference in training error and training r-squared value, there is a huge gap between validation metrics.
  
 ![Error](imgs/error_matrix.png)
 ![Error](imgs/r_matrix.png)
 
-It can be concluded that markdowns have huge impact on performance.
+It can be concluded that markdowns have huge impact on performance. By predicting training data, MSE is obtained as 5e+06 and 5.9e+06 for model_with and model_without, respectively. Moreover, by predicting validation data, MSE is obtained as 9e+07 and 3.1e+08 for model_with and model_without respectively.
+
+R-squared metric is also used for performance evaluation. While r-squared values for model_with and model_without are the same (0.99) on training data, model_with has 0.83 r-squared score and model_without has 0.41 r-squared score on validation data. 
+
+The results indicates that markdown columns contain important information about sales. 
+ 
